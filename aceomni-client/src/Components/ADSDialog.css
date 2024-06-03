@@ -1,0 +1,19 @@
+@import "../global_colors.css";
+
+.adsdialogtitle {
+  color: var(--ADS_Black) !important;
+  background-color: var(--ADS_White) !important;
+  display: flex !important;
+}
+
+.adsdialog {
+  border: 1px solid var(ADS_Grayscale_20) !important;
+}
+
+.adsdialogbuttons {
+  color: var(--ADS_Black) !important;
+  background-color: var(--ADS_Background_Gray_Light) !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 16px !important;
+}

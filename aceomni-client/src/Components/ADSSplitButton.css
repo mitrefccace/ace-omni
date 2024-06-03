@@ -1,0 +1,59 @@
+.splitButtonDropdownToggle-primary {
+  border-left: 1px solid var(--ADS_White) !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  /* 16*2 + 8 = 40 */
+  min-width: 40px !important;
+}
+
+.splitButtonDropdownToggle-primary:not([disabled]):hover {
+  border-left: 1px solid var(--ADS_White) !important;
+}
+
+.splitButtonDropdownToggle-primary:not([disabled]):focus {
+  border-left: 1px solid var(--ADS_White) !important;
+}
+
+.splitButtonDropdownToggle-secondary {
+  border-left: 1px solid var(--ADS_Blue) !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  /* 16*2 + 8 = 40 */
+  min-width: 40px !important;
+}
+
+.splitButtonDropdownToggle-secondary:not([disabled]):hover {
+  border-left: 1px solid var(--ADS_Blue) !important;
+}
+
+.splitButtonDropdownToggle-secondary:not([disabled]):focus {
+  border-left: 1px solid var(--ADS_Blue) !important;
+}
+
+.splitButtonButton-primary {
+  border-right: 1px solid var(--ADS_White) !important;
+}
+
+.splitButtonButton-primary:not([disabled]):hover {
+  border-right: 1px solid var(--ADS_White) !important;
+}
+
+.splitButtonButton-primary:not([disabled]):focus {
+  border-right: 1px solid var(--ADS_White) !important;
+}
+
+.splitButtonButton-secondary {
+  border-right: 1px solid var(--ADS_Blue) !important;
+}
+
+.splitButtonButton-secondary:not([disabled]):hover {
+  border-right: 1px solid var(--ADS_Blue) !important;
+}
+
+.splitButtonButton-secondary:not([disabled]):focus {
+  border-right: 1px solid var(--ADS_Blue) !important;
+}
+
+.MuiPopper-root {
+  z-index: 99999 !important;
+}

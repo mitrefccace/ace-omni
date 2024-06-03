@@ -1,0 +1,63 @@
+@import "../global_colors.css";
+
+/* Tab Button Styles */
+
+:root {
+  /* --chakra-shadows-outline: 0 0 0 2px var(--ADS_Black) !important; */
+}
+
+.chakra-tabs__tab {
+  color: var(--ADS_Grayscale_70);
+  font-weight: 700 !important;
+  height: 48px;
+  margin-bottom: 0 !important;
+  border: none;
+  background: none;
+  padding: 0 16px;
+}
+
+.chakra-tabs__tablist [aria-selected="true"]{
+  color: var(--ADS_Blue);
+  border-bottom: 3px solid var(--ADS_Blue) !important;
+}
+
+.chakra-tabs__tablist {
+  display: grid !important;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  border-bottom: 1px solid var(--ADS_Grayscale_20) !important;
+}
+
+/* .chakra-tabs__tab:not([aria-selected="true"]):hover { */
+.chakra-tabs__tab:hover {
+  background-color: var(--ADS_Blue_T90) !important;
+}
+
+.chakra-tabs__tab:focus {
+  background-color: var(--ADS_Blue_T80) !important;
+}
+
+.chakra-tabs__tab:disabled {
+  opacity: .38 !important;
+  cursor: default !important;
+}
+
+.chakra-tabs__tab:disabled:hover {
+  background: none !important;
+}
+
+.clustered {
+  width: 100%;
+}
+
+.clustered .chakra-tabs__tablist {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  width: max-content;
+}
+
+.chakra-tabs__tab-panel .container{
+  margin-right: 0;
+  margin-left: 0;
+}

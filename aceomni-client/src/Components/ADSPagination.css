@@ -1,0 +1,63 @@
+@import "../global_colors.css";
+.MuiPaginationItem-root.Mui-selected {
+  background-color: var(--ADS_Blue) !important;
+  color: var(--ADS_White) !important;
+  font-weight: bold;
+  border: 0px;
+}
+
+.MuiPaginationItem-root {
+  border-radius: 0px !important;
+  border-color: var(--ADS_Grayscale_20) !important;
+  color: var(--ADS_Blue) !important;
+  font-size: 14px !important;
+  margin: 2px !important;
+}
+
+.MuiPaginationItem-root:hover {
+  background-color: var(--ADS_Blue_T90) !important;
+}
+
+.MuiPaginationItem-root.Mui-selected:hover {
+  background-color: var(--ADS_Blue) !important;
+}
+
+.MuiPaginationItem-ellipsis {
+  color: var(--ADS_Blue) !important;
+  height: 32px !important;
+  width: 32px !important;
+  border: 1px solid var(--ADS_Grayscale_20) !important;
+  line-height: 30px !important;
+}
+
+.MuiPaginationItem-ellipsis:hover {
+  background-color: var(--ADS_White) !important;
+}
+
+.MuiPaginationItem-root.Mui-focusVisible {
+  background-color: var(--ADS_Blue_T80) !important;
+  outline: 2px;
+  outline-style: solid;
+  outline-offset: 1px;
+  outline-color: var(--ADS_Black);
+}
+.previousNextNavigation{
+  align-self: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 32px;
+  height: 32px;
+  margin: 0px;
+}
+
+.MuiPaginationItem-previousNext {
+  text-align: center !important;
+  padding: 0px !important;
+}
+.MuiPaginationItem-root.Mui-selected.Mui-focusVisible {
+  background-color: var(--ADS_Blue) !important;
+}
+
+.MuiTouchRipple-root {
+  display: none;
+}

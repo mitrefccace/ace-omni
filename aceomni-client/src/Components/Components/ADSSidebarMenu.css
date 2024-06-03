@@ -1,0 +1,14 @@
+.sidebarMenu .col {
+  margin-bottom: 3px;
+}
+
+.navPanelCol {
+  height: 40px;
+  width: 200px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.navPanelCol:hover {
+  background-color: var(--ADS_Blue_T90);
+}

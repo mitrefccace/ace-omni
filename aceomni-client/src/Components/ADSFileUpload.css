@@ -1,0 +1,41 @@
+.file-upload-item {
+  display: grid;
+  margin: 10px 0;
+  grid-template-areas:
+  "file-info"
+  "upload";
+}
+
+.file-upload-file-info {
+  display: grid;
+  grid-template-columns: max-content 1fr min-content;
+  background-color: var(--ADS_Background_Gray_Med2);
+  border: 2px solid var(--ADS_Background_Gray_Med2);
+  grid-template-areas:
+  "file-text . close-button";
+}
+
+.file-upload-text {
+  padding: 10px;
+}
+
+.file-upload-button {
+  grid-area: close-button;
+  display: flex;
+  align-items: center;
+}
+
+.file-upload-item .progress {
+  grid-area: upload;
+  margin: 0;
+}
+
+.upload-progress-error {
+  grid-area: upload;
+  color: var(--ADS_Text_Field_Validation_Error);
+  font-style: italic;
+}
+
+.upload-invalid {
+  border: 2px solid var(--ADS_Text_Field_Validation_Error);
+}

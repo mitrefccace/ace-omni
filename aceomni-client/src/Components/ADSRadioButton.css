@@ -1,0 +1,39 @@
+@import "../global_colors.css";
+.radio-button-group .form-check-label,
+input[type="radio"]~.form-check-label {
+  height: 48px;
+  padding-left: 6px;
+  line-height: 48px;
+}
+input[type='radio'] {
+  width: 20px;
+  height: 20px;
+  border-color: var(--ADS_Grayscale_70);
+  border-width: 2px;
+  box-shadow: 'none';
+  margin-top: 0;
+}
+
+input[type='radio']:checked {
+  background-color: var(--ADS_Blue);
+  border: var(--ADS_Blue);
+  background-size: 16px;
+  width: 20px;
+  height: 20px;
+  outline: 'none';
+}
+
+input[type='radio']:focus {
+  outline: 2px;
+  outline-style: solid;
+  outline-offset: 1px;
+  outline-color: var(--ADS_Black);
+  border-color: var(--ADS_Grayscale_70);
+}
+
+.radio-button-wrapper {
+  display: grid;
+  grid-template-columns: min-content auto;
+  height: 35px;
+  align-items: center;
+}

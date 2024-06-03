@@ -1,0 +1,7 @@
+span.banner {
+    color: var(--ADS_White);
+    padding-left: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+}

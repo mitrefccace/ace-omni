@@ -1,0 +1,13 @@
+.configurationGrayBoxWrapper {
+  padding: 16px;
+  background-color: var(--ADS_Background_Gray_Med1);
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.configurationGraySubBox {
+  padding: 16px;
+  background-color: var(--ADS_Background_Gray_Light);
+  margin: 32px 16px 0px 16px
+}

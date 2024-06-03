@@ -1,0 +1,130 @@
+{
+  "type": "IPCTS",
+  "configurations": [
+    {
+      "name": "Configuration1",
+      "participants": [
+        {
+          "name": "Participant1",
+          "extension": "0001",
+          "userInterface1": {
+            "IncomingAudio": {
+              "MonoAudio": false,
+              "SpeakerBalanceR": 0,
+              "SpeakerBalanceL": 0
+            }
+          },
+          "audioStream1": {
+            "includeDistortionCorruption": {
+              "injectBackgroundNoise": false,
+              "audioFile": null,
+              "injectSource": "",
+              "simulatePacketDrops": false,
+              "packetDropSource": "",
+              "packetDropDuration": 2,
+              "repetitionInterval": {
+                "interval": "Exact",
+                "fromSecs": 1,
+                "toSecs": 10
+              }
+            },
+            "audioControlFilters": {
+              "audioFilter": false,
+              "filterType": "",
+              "filterSource": "",
+              "frequency": 20,
+              "rollOff": -12,
+              "gain": 0,
+              "pitch": 0,
+              "quality": 1
+            }
+          },
+          "ASR1": {
+            "engineSTT": "IBM-Watson",
+            "showFinalizedCaptionsOnly": false,
+            "punctuation": false,
+            "errorSimulation": false,
+            "googleCloudSpeechV2": false,
+            "dropoutInterval": 0,
+            "dropoutLength": 0,
+            "captionDelay": 0,
+            "backgroundAudioSuppression": 0,
+            "speechDetectorSensitivity": 0,
+            "translationSTT": false,
+            "translationEngine": "G-Google",
+            "participant1Speech": "English",
+            "participant2Captions": "Spanish"
+          }
+        },
+        {
+          "name": "Participant2",
+          "extension": "0002",
+          "userInterface2": {
+            "captions": {
+              "showCaptions": "No Captions",
+              "captionSpeed": "in real-time",
+              "captionFormat": {
+                "senderLabel": false,
+                "receiverLabel": false,
+                "horizontalRule": false
+              },
+              "captionAppearance": "top-down",
+              "captionJustification": "left-justified"
+            },
+            "IncomingAudio": {
+              "MonoAudio": false,
+              "SpeakerBalanceR": 0,
+              "SpeakerBalanceL": 0
+            }
+          },
+          "audioStream2": {
+            "includeDistortionCorruption": {
+              "injectBackgroundNoise": false,
+              "audioFile": null,
+              "injectSource": "",
+              "simulatePacketDrops": false,
+              "packetDropSource": "",
+              "packetDropDuration": 2,
+              "repetitionInterval": {
+                "interval": "Exact",
+                "fromSecs": 1,
+                "toSecs": 10
+              }
+            },
+            "audioControlFilters": {
+              "audioFilter": false,
+              "filterType": "",
+              "filterSource": "",
+              "frequency": 20,
+              "rollOff": -12,
+              "gain": 0,
+              "pitch": 0,
+              "quality": 1
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "dataCollection": {
+    "Transcripts": {
+      "ASRcaptionStream": true,
+      "TranslationEngine": true
+    },
+    "AudioRecordings": {
+      "AudioStream1": true,
+      "AudioStream2": true
+    },
+    "ScreenRecordings": {
+      "UserInterface1": true,
+      "UserInterface2": true
+    },
+    "VideoRecordings": {
+      "Video1": true,
+      "Video2": true
+    },
+    "OtherData": {
+      "ASRrawdata": true
+    }
+  }
+}

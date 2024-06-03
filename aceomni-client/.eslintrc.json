@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "mocha": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks"
+  ],
+  "ignorePatterns": ["**/build/*"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/extensions": "off",
+    "no-console": "off",
+    "comma-dangle": ["error", "never"],
+    "@typescript-eslint/comma-dangle": ["error", "never"],
+    "no-unused-vars": [2, {"args": "after-used", "argsIgnorePattern": "^_"}],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/jsx-one-expression-per-line": "off",
+    "no-underscore-dangle":  ["error", { "allow": ["_id"] }],
+    "no-param-reassign": [2, { "props": false }]
+  }
+}

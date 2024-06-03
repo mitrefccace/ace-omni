@@ -1,0 +1,380 @@
+.participantsLoginHeader {
+  color: var(--ADS_Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.participantsLoginDesc {
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.participantsExtensionForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.participantsDialDesc {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dialPageEndCallButton {
+  background-color: var(--ADS_Hang_Up) !important;
+}
+
+/* ------------------------ ParticipantCApage.tsx */
+
+#ca-page-container {
+  /* border: 1px solid red; */
+  height: 100vh;
+  background-color: #F9F9F9;
+  padding: 0;
+}
+
+#ca-page-container .accordion-body {
+  padding: 0;
+}
+
+#ca-page-body {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "study-title"
+    "body";
+  justify-content: center;
+}
+
+#ca-page-body .study-title {
+  grid-area: study-title;
+  display: grid;
+  grid-template-areas: ". title button";
+  grid-template-columns: repeat(3, 1fr);
+  padding: 24px 0;
+  align-items: center;
+}
+
+#ca-page-body .study-name {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+}
+
+#ca-page-body .disconnect-button-div {
+  grid-area: button;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#ca-page-body .dial-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+#ca-page-body .dial-div form {
+  padding: 16px 0;
+}
+
+#ca-page-body .participant-div {
+  display: grid;
+  grid-template-columns: min-content 1fr 80px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding: 16px;
+}
+
+#ca-call-button {
+  width: 288px;
+  align-self: center;
+  background-color: var(--ADS_Blue) !important;
+  color: var(--ADS_White) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  min-width: 64px !important;
+  border: none !important;
+  white-space: nowrap;
+  margin: 16px 0;
+}
+
+#ca-extension-input {
+  width: 288px;
+  margin-right: 6px;
+}
+
+.ca-waiting-msg {
+  align-self: center;
+  margin-bottom: 12px;
+}
+
+#ca-hangup-button-1 {
+  background-color: var(--ADS_Hang_Up) !important;
+  color: var(--ADS_White) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  min-width: 64px !important;
+  border: none !important;
+  white-space: nowrap;
+}
+
+#ca-hangup-button-2 {
+  background-color: var(--ADS_Hang_Up) !important;
+  color: var(--ADS_White) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  min-width: 64px !important;
+  border: none !important;
+  white-space: nowrap;
+}
+
+.dial-participant-container {
+  display: flex;
+  /* flex-basis: 30% */
+}
+
+.dial-participant-container .accordion {
+  /* width: 80%; */
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
+  min-width: 400px;
+}
+
+.vrs-number {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--ADS_Black);
+}
+
+.vrs-container {
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: 70% */
+}
+
+.vrs-controls-left {
+  width: 40%;
+}
+
+.vrs-controls-left {
+  display: flex;
+}
+
+.vrs-controls-container {
+  display: flex;
+  height: 72px;
+  width: 100%;
+  min-width: 718px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.call-container {
+  display: flex;
+  gap: 32px
+}
+
+.video-container {
+  grid-area: video-container;
+  display: flex;
+  border: #464646 solid 1px;
+}
+
+.video-self {
+  display: flex;
+  padding: 8px;
+  width: 200px;
+}
+
+.self-view-video,
+.remote-view-video {
+  background-color: var(--ADS_Background_Gray_Dark);
+}
+
+.video-remote {
+  display: flex;
+  width: 100%;
+  min-width: 518px;
+  min-height: 460px;
+  overflow: auto;
+}
+
+/*are these media rules necessary? Ask Harrison*/
+@media only screen and (max-width: 991px) {
+  .xvideo-remote {
+    display: flex;
+    outline: red solid 1px;
+    min-width: 518px;
+    min-height: 460px;
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .xvideo-remote {
+    display: flex;
+    outline: red solid 1px;
+    width: 646px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .xvideo-remote {
+    display: flex;
+    outline: red solid 1px;
+    min-width: 820px;
+  }
+}
+
+.ca-page-button {
+  border-radius: 50%;
+}
+
+.ca-page-button .btn {
+  color: var(--ADS_White) !important;
+  background-color: var(--ADS_Hang_Up) !important;
+}
+
+.ca-page-button .btn:hover:not(.fa-phone) {
+  background-color: var(--ADS_Black) !important;
+}
+
+.ca-page-button .btn-circular-filled:not(.fa-phone):not([disabled]):focus  {
+  background-color: var(--ADS_Black) !important;
+}
+
+.ca-page-button .btn .fa-phone {
+  rotate: 135deg;
+}
+
+.call-participant-list-item {
+  display: flex;
+}
+
+/* ------------------------ ParticipantVRSdialPage.tsx */
+.ui-2-container {
+  display: flex;
+  justify-content: center;
+}
+
+#participant-vrs-container {
+  margin-top: 36px;
+}
+
+#participant-vrs-container .vrs-controls-container {
+  width: initial;
+  max-width: 620px;
+}
+
+#participant-vrs-container .video-self {
+  border: 1px solid var(--ADS_Black);
+  background-color: var(--ADS_Black);
+  width: 184px;
+  height: 104px;
+  margin: 8px 8px 0 8px;
+  padding: 0;
+}
+
+#participant-vrs-container .video-self video {
+  width: 100%;
+}
+
+#participant-vrs-container .video-remote {
+  background-color: var(--ADS_Background_Gray_Dark);
+  justify-content: center;
+  /* min-width: 300px; */
+  /* min-height: 300px; */
+  /* width: 50%; */
+}
+
+/* medium screen */
+@media only screen and (min-width: 768px) {
+  #participant-vrs-container {
+    max-width: 720px;
+  }
+
+  #participant-vrs-container .vrs-controls-container {
+    width: initial;
+    min-width: 720px;
+  }
+
+  #participant-vrs-container .video-remote {
+    min-width: 518px;
+  }
+
+  #participant-vrs-container .video-remote video {
+    min-width: 518px;
+  }
+}
+
+/* large screen */
+@media only screen and (min-width: 992px) {
+  #participant-vrs-container {
+    width: 848px;
+    min-width: 848px;
+  }
+
+  #participant-vrs-container .vrs-controls-container {
+    width: 848px;
+    min-width: 848px;
+  }
+
+  #participant-vrs-container .video-remote {
+    width: 646px;
+    min-width: 646px;
+  }
+
+  #participant-vrs-container .video-remote video {
+    width: 646px;
+    min-width: 646px;
+  }
+}
+
+/* xl screen */
+@media only screen and (min-width: 1200px) {
+  #participant-vrs-container {
+    min-width: 1020px;
+  }
+
+  #participant-vrs-container .vrs-controls-container {
+    width: initial;
+    min-width: 1020px;
+  }
+
+  #participant-vrs-container .video-remote {
+    min-width: 820px;
+  }
+
+  #participant-vrs-container .video-remote video {
+    min-width: 820px;
+  }
+}
+
+#participant-vrs-container .hangup-btn {
+  margin-left: 20px;
+}
+
+/* #participant-vrs-container {
+  min-width: 0;
+} */

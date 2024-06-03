@@ -1,0 +1,46 @@
+@import "../global_colors.css";
+
+.rdt_TableHeadRow {
+    background-color: plum;      
+}
+
+.rdt_Table {
+border: "3px solid black"
+}
+
+.rdt_Table input[type="checkbox"]:not(:checked) {
+    border-radius: 0 !important;
+}
+
+.rdt_Table input[type='checkbox'] {
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+    border-color: var(--ADS_Grayscale_70);
+    border-width: 2px;
+    box-shadow: 'none';
+    margin-top: 0;
+  }
+  
+.rdt_Table input[type='checkbox']:checked {
+    background-color: var(--ADS_Blue);
+    border: var(--ADS_Blue);
+    width: 20px;
+    height: 20px;
+    outline: 'none';
+    border-radius: 0;
+  }
+  
+.rdt_Table input[type='checkbox']:focus {
+    outline: 2px;
+    outline-style: solid;
+    outline-offset: 1px;
+    outline-color: var(--ADS_Black);
+    border-color: var(--ADS_Grayscale_70);
+    border-radius: 0;
+  }
+  
+.dlfHg div:first-child {
+  white-space: inherit !important;
+}
+  

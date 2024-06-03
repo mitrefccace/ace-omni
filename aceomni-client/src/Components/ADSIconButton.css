@@ -1,0 +1,144 @@
+@import "../global_colors.css";
+
+.btn-circular-small {
+  height: 32px !important;
+  width: 32px !important;
+  --bs-btn-padding-x: none !important;
+  --bs-btn-padding-y: none !important;
+}
+
+.btn-circular-medium {
+  height: 40px !important;
+  width: 40px !important;
+  --bs-btn-padding-x: none !important;
+  --bs-btn-padding-y: none !important;
+}
+
+.btn-circular-large {
+  height: 48px !important;
+  width: 48px !important;
+  --bs-btn-padding-x: none !important;
+  --bs-btn-padding-y: none !important;
+}
+
+.btn-circular-standard {
+  border-radius: 50% !important;
+  border: none;
+  background-color: transparent !important;
+  color: var(--ADS_Blue) !important;
+  vertical-align: initial !important;
+}
+
+.btn-circular-standard:disabled,
+.btn-circular-standard[disabled] {
+  background-color: transparent !important;
+  color: var(--ADS_Grayscale_70) !important;
+  border: none;
+  box-shadow: none;
+}
+
+.btn-circular-standard:not([disabled]):hover {
+  background-color: transparent !important;
+  color: var(--ADS_Blue_T10);
+}
+
+.btn-circular-standard:not([disabled]):focus {
+  background-color: transparent !important;
+  color: var(--ADS_White);
+  box-shadow: inset 0 0 0 2px var(--ADS_Black);
+}
+
+/* ----------------------------------------- */
+
+.btn-circular-filled {
+  border-radius: 50% !important;
+  border: none;
+  background-color: var(--ADS_Blue) !important;
+  color: var(--ADS_White) !important;
+  vertical-align: initial !important;
+}
+
+.btn-circular-filled:disabled,
+.btn-circular-filled[disabled] {
+  background-color: var(--ADS_Grayscale_20) !important;
+  color: var(--ADS_Grayscale_70) !important;
+  border: none;
+  box-shadow: none;
+}
+
+.btn-circular-filled:not([disabled]):hover {
+  background-color: var(--ADS_Blue_T10) !important;
+  color: var(--ADS_White);
+}
+
+.btn-circular-filled:not([disabled]):focus {
+  background-color: var(--ADS_Blue_T20) !important;
+  color: var(--ADS_White);
+  box-shadow: inset 0 0 0 2px var(--ADS_Black);
+}
+
+/* ----------------------------------------- */
+
+.btn-circular-outlined {
+  border-radius: 50% !important;
+  background-color: var(--ADS_White) !important;
+  border: 2px solid var(--ADS_Blue) !important;
+  color: var(--ADS_Blue) !important;
+  vertical-align: initial !important;
+}
+
+.btn-circular-outlined:disabled,
+.btn-circular-outlined[disabled] {
+  background-color: var(--ADS_White) !important;
+  color: var(--ADS_Grayscale_70) !important;
+  border: 2px solid var(--ADS_Grayscale_70) !important;
+}
+
+.btn-circular-outlined:not([disabled]):hover {
+  background-color: var(--ADS_Blue_T90) !important;
+  border-color: var(--ADS_Blue) !important;
+  color: var(--ADS_Blue) !important;
+}
+
+.btn-circular-outlined:not([disabled]):focus {
+  background-color: var(--ADS_Blue_T80) !important;
+  border-color: var(--ADS_Blue) !important;
+  color: var(--ADS_Blue) !important;
+  box-shadow: inset 0 0 0 2px var(--ADS_Black);
+}
+
+.btn-circular-clear-small {
+  height: 24px !important;
+  width: 24px !important;
+  --bs-btn-padding-x: none !important;
+  --bs-btn-padding-y: none !important;
+  vertical-align: -1px !important;
+}
+
+.clear-small-btn-clear-text {
+  height: 12px !important;
+  width: 12px !important;
+  vertical-align: 1px !important;
+}
+ 
+.btn-circular-clear-text {
+  border-radius: 50% !important;
+  background-color: var(--ADS_Grayscale_50) !important;
+  color: white !important;
+  text-align: center;
+}
+
+.btn-circular-clear-text:not([disabled]):hover {
+  border-radius: 50% !important;
+  background-color: var(--ADS_Grayscale_60) !important;
+  color: white !important;
+  text-align: center;
+}
+
+.btn-circular-clear-text:not([disabled]):focus {
+  border-radius: 50% !important;
+  background-color: var(--ADS_Grayscale_50) !important;
+  box-shadow: inset 0 0 0 2px var(--ADS_Black);
+  color: white !important;
+  text-align: center;
+}

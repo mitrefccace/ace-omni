@@ -1,0 +1,44 @@
+.progress {
+    margin: 5px;
+    border-radius:0px !important;
+}
+
+.progress-small .progress-bar, .progress-small {
+    height: 4px !important;
+}
+
+.progress-medium .progress-bar, .progress-medium {
+    height: 8px !important;
+}
+
+.progress-large .progress-bar, .progress-large {
+    height: 16px !important;
+}
+
+.progress-extra-large .progress-bar, .progress-extra-large {
+    height: 32px !important;
+}
+
+.ADS_Orange.progress {
+    background-color: var(--ADS_Orange_T90);
+}
+.ADS_Orange .progress-bar {
+    background-color: var(--ADS_Orange);
+}
+
+.ADS_Blue.progress {
+    background-color: var(--ADS_Blue_T90);
+}
+.ADS_Blue .progress-bar {
+    background-color: var(--ADS_Blue);
+}
+
+.indeterminate .progress-bar {
+    position: relative;
+    animation: progress-indeterminate 3s linear infinite;
+}
+
+@keyframes progress-indeterminate {
+  from { left: -25%; width: 25%; }
+  to { left: 100%; width: 25%;}
+}

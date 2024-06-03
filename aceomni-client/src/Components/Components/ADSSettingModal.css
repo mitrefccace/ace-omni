@@ -1,0 +1,33 @@
+.font-box-color-white {
+  background-color: var(--ADS_White);
+  border: solid;
+  border-color: var(--ADS_Black);
+  float: right;
+  margin-right: 27%;
+  padding: 8px;
+  width: fit-content !important;
+}
+.font-box-color-grey {
+  background-color: var(--ADS_Background_Gray_Med1);
+  border: 1;
+  float: right;
+  margin-right: 27%;
+  padding: 8px;
+  width: fit-content !important;
+}
+
+.font-box-color-black {
+  background-color: var(--ADS_Black);
+  border: 1;
+  color: var(--ADS_White);
+  float: right;
+  margin-right: 27%;
+  padding: 8px;
+  width: fit-content !important;
+}
+.font-radio-checkbox {
+  width: 54% !important;
+}
+.font-size-dropdown {
+  padding-top: 31px;
+}

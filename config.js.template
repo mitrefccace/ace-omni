@@ -1,0 +1,21 @@
+var config = {}
+config.port = 9000; // port for node api server
+config.environment = "DEV"; // DEV or PROD required for react routing.
+
+// SSL Configurations
+config.ssl = {}
+config.ssl.enabled = false;  // true:HTTPS  false:HTTP
+config.ssl.cert = "/path/to/cert.crt";
+config.ssl.key = "/path/to/key.key";
+
+// MongoDB Configurations
+config.mongodb = {}
+config.mongodb.connection = "mongodb://localhost:27017/aceomni";
+
+
+// Session configurations
+config.session = {};
+config.session.name = "aceOmniUserSession";
+config.session.secret = "secretPhraseWeUseForSessions";
+
+module.exports = config;

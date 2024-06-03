@@ -1,0 +1,78 @@
+.ads-button-group {
+    background-color: var(--ADS_Blue) !important;
+    color: var(--ADS_White) !important;
+    height: 40px !important;
+}
+
+.ads-button-group label, .ads-button-group > .icon-group-button {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    height: 32px !important;
+    /* margin: 3px; */
+    margin-top: -8px;
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    line-height: 30px !important;
+    font-weight: 700 !important;
+    cursor: pointer;
+}
+
+.ads-button-group label:hover {
+    background-color: var(--ADS_Blue_T90) !important;
+    color: var(--ADS_Blue) !important;
+}
+
+.ads-button-group label:focus {
+    background-color: var(--ADS_Blue_T80) !important;
+    color: var(--ADS_Blue) !important;
+}
+
+.ads-button-group:focus {
+    color: red;
+}
+
+
+.ads-button-group .form-check-inline {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.ads-button-group > :first-child {
+    /* padding-left: 20px !important; */
+    margin-left: 4px;
+}
+
+.ads-button-group > :last-child {
+    /* padding-right: 20px !important; */
+    margin-right: 4px;
+}
+
+
+.ads-button-group :checked {
+    background-color: var(--ADS_White) !important;
+    color:  var(--ADS_Blue) !important;
+}
+
+.ads-button-group input[type="radio"], .ads-button-group input[type="radio"]:focus, .ads-button-group input[type="radio"]:checked {
+    /* Can't display: none or we lose focus, so kludge to throw the circle offscreen somewhere */
+    width: 0 !important;
+    height: 0;
+    opacity: 0;
+    left: -4000px;
+    position: absolute;
+}
+
+.ads-button-group label {
+    white-space: nowrap;
+}
+
+.ads-button-group input[type="radio"]:checked+label {
+    background-color: var(--ADS_White) !important;
+    color:  var(--ADS_Blue) !important;
+}
+
+.ads-button-group input[type="radio"]:focus+label {
+    background-color: var(--ADS_Blue_T80) !important;
+}

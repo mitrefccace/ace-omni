@@ -1,0 +1,5 @@
+.configurationGrayBox {
+  padding: 16px;
+  background-color: var(--ADS_Background_Gray_Med1);
+  margin-top: 5px;
+}

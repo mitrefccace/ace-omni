@@ -1,0 +1,62 @@
+@import "../global_colors.css";
+.ads-checkbox-small .form-check-label {
+  height: 32px;
+  padding-left: 6px;
+  line-height: 32px;
+}
+
+.ads-checkbox-medium .form-check-label {
+  height: 40px;
+  padding-left: 6px;
+  line-height: 40px;
+}
+
+.ads-checkbox-large .form-check-label {
+  height: 48px;
+  padding-left: 6px;
+  line-height: 48px;
+}
+
+.ads-checkbox input[type="checkbox"]:not(:checked) {
+  border-radius: 0;
+}
+
+.ads-checkbox input[type='checkbox'] {
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+  border-color: var(--ADS_Grayscale_70);
+  border-width: 2px;
+  box-shadow: 'none';
+  margin-top: 0;
+}
+
+.ads-checkbox input[type='checkbox']:checked {
+  background-color: var(--ADS_Blue);
+  border: var(--ADS_Blue);
+  width: 20px;
+  height: 20px;
+  outline: 'none';
+  border-radius: 0;
+}
+
+.ads-checkbox input[type='checkbox']:focus {
+  outline: 2px;
+  outline-style: solid;
+  outline-offset: 1px;
+  outline-color: var(--ADS_Black);
+  border-color: var(--ADS_Grayscale_70);
+  border-radius: 0;
+}
+
+.checkbox-wrapper {
+  display: grid;
+  grid-template-columns: min-content auto;
+  height: 48px;
+  align-items: center;
+  width: max-content;
+}
+
+.hidden {
+  display: none;
+}

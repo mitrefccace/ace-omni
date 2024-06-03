@@ -1,0 +1,112 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+const config = require('../config.js');
+const app = require('../app');
+const debug = require('debug')('ace-omni:server');
+const http = require('http');
+const https = require('https');
+
+let server;
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+const port = normalizePort(config.port);
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+if (config.ssl.enabled) {
+  const credentials = {
+    key: fs.readFileSync(config.ssl.key),
+    cert: fs.readFileSync(config.ssl.cert)
+  };
+  server = https.createServer(credentials, app);
+} else {
+  server = http.createServer(app);
+}
+
+// io setup
+const io = require('socket.io')(server);
+require('../socket.js')(io);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  const port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  const bind = typeof port === 'string'
+    ? `Pipe ${port}`
+    : `Port ${port}`;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(`${bind} requires elevated privileges`);
+      process.exit(1);
+    case 'EADDRINUSE':
+      console.error(`${bind} is already in use`);
+      process.exit(1);
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  const addr = server.address();
+  const bind = typeof addr === 'string'
+    ? `pipe ${addr}`
+    : `port ${addr.port}`;
+  const protocol = config.ssl.enabled ? 'HTTPS' : 'HTTP';
+  console.log(`
+     █████╗  ██████╗███████╗     ██████╗ ███╗   ███╗███╗   ██╗██╗
+    ██╔══██╗██╔════╝██╔════╝    ██╔═══██╗████╗ ████║████╗  ██║██║
+    ███████║██║     █████╗      ██║   ██║██╔████╔██║██╔██╗ ██║██║
+    ██╔══██║██║     ██╔══╝      ██║   ██║██║╚██╔╝██║██║╚██╗██║██║
+    ██║  ██║╚██████╗███████╗    ╚██████╔╝██║ ╚═╝ ██║██║ ╚████║██║
+    ╚═╝  ╚═╝ ╚═════╝╚══════╝     ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═══╝╚═╝
+                                                                 
+  `);
+  console.log(`Listening for ${protocol} connections on ${bind}`);
+}

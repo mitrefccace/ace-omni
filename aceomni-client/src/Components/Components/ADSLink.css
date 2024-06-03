@@ -1,0 +1,17 @@
+.ads-link-wrapper {
+  color: var(--ADS_Text_Link);
+  text-decoration: none;
+}
+
+.ads-link-wrapper:hover {
+  color: var(--ADS_Text_Link_Hover);
+}
+.ads-link {
+  color: var(--ADS_Text_Link);
+  text-decoration: none;
+}
+
+.ads-link:hover {
+  color: var(--ADS_Text_Link_Hover);
+  text-decoration: underline;
+}

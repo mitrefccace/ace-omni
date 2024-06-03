@@ -1,0 +1,5 @@
+@import "../global_colors.css";
+.fullWidth {
+  background-color: var(--ADS_Grayscale_20);
+  height: 1px;
+}

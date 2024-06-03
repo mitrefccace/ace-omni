@@ -1,0 +1,22 @@
+.ads-breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.ads-crumb {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-chevron {
+  margin: 0 2px;
+  color: #464646;
+}
+
+.breadcrumb-disabled {
+  opacity: 1 !important;
+}
+
+.ads-breadcrumb-container {
+  padding-left: 0 !important;
+}

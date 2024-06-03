@@ -1,0 +1,141 @@
+/* eslint-disable react/jsx-props-no-spreading */
+import React, { useState } from 'react';
+
+import './ADSButton.css';
+import { Dropdown } from 'react-bootstrap';
+import ADSMenu from './ADSMenu';
+
+interface ADSMenuButtonProps {
+  buttonText: string,
+  disabled?: boolean,
+  fontType?: string,
+  height?: 'small' | 'medium' | 'large',
+  variant?: 'primary' | 'secondary' | 'tertiary',
+  menuOptions: Array<any>,
+  alignOption?: 'auto-end'
+  | 'bottom-end'
+  | 'bottom-start'
+  | 'left-end'
+  | 'left-start'
+  | 'right-end'
+  | 'right-start'
+  | 'top-end'
+  | 'top-start',
+  menuWidth?: string,
+  subMenuWidth?: string,
+  secondSubMenuWidth?: string,
+  setMenuOption: any,
+  menuButtonID: string,
+  menuID: string
+}
+
+/**
+ * Returns an ADS Button
+ *
+ * @param buttonText - Text of a button.
+ * @param disabled - true | false (default: false)
+ * @param fontType -
+ * @param height - 'small' | 'medium' | 'large' (default: medium)
+ * @param menuOptions - Array of menu items
+ * @param alignOption - 'auto-end'
+  | 'bottom-end'
+  | 'bottom-start'
+  | 'left-end'
+  | 'left-start'
+  | 'right-end'
+  | 'right-start'
+  | 'top-end'
+  | 'top-start'. Position of menu relative to menu button
+ * @param variant - 'primary' | 'secondary' | 'tertiary' (default: primary)
+ * @param menuWidth - Pixel value of menu width
+ * @param subMenuWidth - Pixel value of submenu width
+ * @param secondSubMenuWidth - Pixel value of second submenu width
+ * @param setMenuOption - Function to set the menu option
+ * @param menuButtonID - ID of menu button
+ * @param menuID - ID of menu
+ *
+ * @returns ADS Button
+ */
+
+function ADSMenuButton(props: ADSMenuButtonProps) {
+  const {
+    buttonText, disabled, fontType, height, variant, menuOptions,
+    alignOption, menuWidth, subMenuWidth, secondSubMenuWidth, setMenuOption, menuButtonID, menuID
+  } = props;
+
+  const [menuIsVisible, setMenuVisibility] = useState(false);
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+
+  const handleClick = (e: any) => {
+    setMenuVisibility(!menuIsVisible);
+    setAnchorEl(e.currentTarget);
+
+    // Remove the focus state from the button
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+  };
+
+  const handleMenuClick = (e: any) => {
+    setMenuOption(e);
+    setMenuVisibility(!menuIsVisible);
+    // Remove the focus state from the button
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+  };
+
+  const handleClickAway = () => {
+    setMenuVisibility(!menuIsVisible);
+  };
+
+  return (
+    // Rectangular button with dropdown icon
+    <Dropdown>
+      <Dropdown.Toggle
+        disabled={disabled}
+        onClick={handleClick}
+        variant={`btn btn-${variant} btn-${height} btn-style ${fontType}`}
+        id={menuButtonID}
+      >
+        <span className="dropdown-text">
+          {buttonText}
+        </span>
+
+      </Dropdown.Toggle>
+
+      {menuIsVisible
+        ? (
+          <ADSMenu
+            anchor={anchorEl}
+            open={menuIsVisible}
+            options={menuOptions}
+            menuPlacement={alignOption || 'bottom-start'}
+            menuWidth={menuWidth!}
+            subMenuWidth={subMenuWidth!}
+            secondSubMenuWidth={secondSubMenuWidth!}
+            isChild={false}
+            level={1}
+            setMenuOption={handleMenuClick}
+            clickAway={handleClickAway}
+            menuButtonID={menuButtonID}
+            menuID={menuID}
+          />
+        )
+        : null}
+    </Dropdown>
+  );
+}
+
+ADSMenuButton.defaultProps = {
+  disabled: false,
+  fontType: 'button',
+  height: 'medium',
+  variant: 'primary',
+  alignOption: 'bottom-start',
+  menuWidth: '200px',
+  subMenuWidth: '200px',
+  secondSubMenuWidth: '200px'
+};
+
+export default ADSMenuButton;

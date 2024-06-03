@@ -1,0 +1,73 @@
+.UIshell-top-control-bar {
+  background-color: var(--ADS_White);
+  border-bottom:  1px solid var(--ADS_Grayscale_50);
+  width: 100%;
+  min-width: 848px;
+  height: 72px;
+  margin-left: 0 !important;
+}
+
+.GlobalUI-Container {
+  background-color: var(--ADS_White);
+  border:  1px solid var(--ADS_Grayscale_50);
+  margin-top: 36px;
+  height: calc(100vh - 188px);
+  min-height: 532px !important;
+  position: relative;
+}
+
+.top-bar-control-items {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+}
+
+.top-bar-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* XL Screen */
+@media (min-width: 1200px) {
+  .GlobalUI-Container {
+    width: 1020px !important;
+  }
+
+  .main-top-bar-content {
+    width: 1020px !important;
+    min-width: 1020px !important;
+  }
+
+  .captions-container {
+    width: 1020px !important;
+    min-width: 1020px !important;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .GlobalUI-Container {
+    width: 848px !important;
+  }
+
+  .main-top-bar-content {
+    width: 848px !important;
+    min-width: 848px !important;
+  }
+}
+
+/* Medium Screen */
+@media (max-width: 991px){
+  .GlobalUI-Container {
+    width: 720px !important;
+  }
+
+  .main-top-bar-content {
+    width: 720px !important;
+    min-width: 720px !important;
+  }
+
+}

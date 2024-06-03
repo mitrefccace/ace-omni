@@ -1,0 +1,46 @@
+.configurationLightGrayBoxLogin {
+  padding: 16px;
+  background-color: var(--ADS_Background_Gray_Light);
+  margin-top: 5px;
+  width: 35vw;
+  margin-top: 10vh;
+  border: 1px solid var(--ADS_Background_Gray_Med2);
+  border-radius: 5px;
+}
+
+.loginRow {
+  padding-top: 12px;
+  margin: auto;
+  width: 20vw;
+}
+
+.loginRowPassword{
+  padding-top: 12px;
+  margin-right: 20% !important;
+  margin-left: 20% !important;
+  width: 30vw;
+}
+
+.iconWithInput {
+  display: flex;
+  align-items: flex-end;
+  margin-left: -16px;
+}
+
+.centerButton {
+  padding: 28px 0;
+  width: 11vw;
+  margin: auto;
+}
+
+.login-parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  position: fixed;
+  top: 18% !important;
+  vertical-align: middle;
+}

@@ -1,0 +1,26 @@
+.call-avatar-icon {
+  --fa-primary-color: var(--ADS_White);
+  color: var(--ADS_Gray);
+  height: 72px
+}
+
+.avatar-icon-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.STS-Container {
+  background-color: var(--ADS_Background_Gray_Light);
+  height: 434px;
+  margin-top: 80px;
+  min-height: 532px !important;
+  width: 192px;
+}
+.keypad-icons-container {
+  display: grid;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: fit-content;
+}

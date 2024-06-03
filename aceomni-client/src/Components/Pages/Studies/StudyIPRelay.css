@@ -1,0 +1,59 @@
+.messageBar {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.chatWindowStyle {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  width: 98%;
+  position: absolute;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.IPrelay-Container {
+  background-color: var(--ADS_White);
+  position: initial !important;
+  min-height: 442px !important;
+}
+
+.bottom-align {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.textarea {
+  resize: none;
+  border: 1px solid var(--ADS_Grayscale_20) !important;
+  padding-left: 8px !important;
+  resize: none !important;
+}
+
+.textarea:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: var(--ADS_Blue_T30) !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--ADS_Blue_T70) !important;
+}
+
+.expand-up-container {
+  position: relative;
+  padding-top: 40px;
+  z-index: 2;
+}
+
+.expand-up-form-group {
+  position: absolute;
+  width: 100%;
+  bottom:0;
+}
+
+.form-text {
+  color: var(--ADS_Black) !important;
+}

@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "aceomni",
+      "script": "npm run start",
+      "cwd": "./",
+      "restart_delay": 5000,
+      "autorestart": false,
+      "out_file": "./logs/pm2-ace-omni.log",
+      "error_file": "./logs/pm2-ace-omni-error.log"
+    }
+  ]
+}

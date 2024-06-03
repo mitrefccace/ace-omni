@@ -1,0 +1,162 @@
+@import "../global_colors.css";
+
+/* --------------------------------------------------- ADSTileGroup */
+.ads-tile-checkbox-group-container,
+.ads-tile-radio-group-container {
+  display: grid;
+  grid-gap: 20px;
+  width: max-content;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(150px, 1fr);
+  margin-bottom: 20px;
+}
+
+.ads-checkbox-wrapper,
+.ads-radio-wrapper {
+  border: none;
+  background: inherit;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ads-tile-checkbox-group-container .form-check,
+.ads-tile-radio-group-container .form-check {
+  display: flex;
+}
+
+.ads-tile-checkbox-span,
+.ads-tile-radio-span {
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.ads-checkbox-wrapper [type=checkbox],
+.ads-radio-wrapper [type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ads-checkbox-wrapper [type=checkbox]+span,
+.ads-radio-wrapper [type=radio]+span {
+  cursor: pointer;
+  border-radius: .375rem;
+  padding: 16px 20px;
+  display: flex;
+  background: var(--ADS_White);
+  border: 2px solid var(--ADS_Blue);
+  color: var(--ADS_Blue);
+  height: 150px;
+}
+
+.ads-tile-checkbox-span:hover,
+.ads-tile-radio-span:hover {
+  background: var(--ADS_Blue_T90) !important;
+}
+
+.ads-checkbox-wrapper [type=checkbox]:checked+span,
+.ads-radio-wrapper [type=radio]:checked+span {
+  background: var(--ADS_Blue_T80);
+}
+
+.ads-checkbox-wrapper [type=checkbox]:focus-visible+span,
+.ads-radio-wrapper [type=radio]:focus-visible+span {
+  outline: 2px;
+  outline-style: solid;
+  outline-offset: 1px;
+}
+
+.ads-checkbox-wrapper [type=checkbox]:disabled+span,
+.ads-radio-wrapper [type=radio]:disabled+span {
+  pointer-events: none;
+  color: var(--ADS_Grayscale_70);
+  background: var(--ADS_Background_Gray_Light);
+  border: 2px solid var(--ADS_Grayscale_20);
+}
+
+.tile-group-container .form-check-input:disabled {
+  opacity: 0 !important;
+}
+
+.tile-group-container .form-label {
+  font-weight: 700;
+}
+
+/* --------------------------------------------------- ADSTile */
+.ads-tile-container {
+  display: grid;
+  row-gap: 12px;
+}
+
+.ads-tile-icon {
+  display: grid;
+  grid-auto-flow: column;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 10px;
+  /* font-size: 33px; */
+  font-size: 35px;
+}
+
+.ads-tile-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tile0
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.tile1
+{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.tile2
+{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.tile3
+{
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.tile4
+{
+    grid-row: 1;
+    grid-column: 5;
+}
+
+.tile5
+{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.tile6
+{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.tile7
+{
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.tile8
+{
+    grid-row: 2;
+    grid-column: 4;
+}

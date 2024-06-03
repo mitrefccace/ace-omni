@@ -1,0 +1,116 @@
+[
+  {
+    "ID": "1",
+    "name": "IP CTS w/ASR Module 1",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1",
+    "parentId": "1",
+    "name": "Configuration1",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_1",
+    "parentId": "1_1",
+    "name": "Participant 1: Extension 0001",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_1_1",
+    "parentId": "1_1_1",
+    "name": "User Interface1",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_1_1_1",
+    "parentId": "1_1_1_1",
+    "name": "Incoming Audio",
+    "moduleName": "IPCTS",
+    "configName": "Configuration1",
+    "participantName": "Participant1",
+    "disabled": true
+  }, {
+    "ID": "1_1_1_2",
+    "parentId": "1_1_1",
+    "name": "Audio Stream 1",
+    "expanded": true,
+    "moduleName": "IPCTS",
+    "configName": "Configuration1",
+    "participantName": "Participant1",
+    "collapsable": true
+  }, {
+    "ID": "1_1_1_2_1",
+    "parentId": "1_1_1_2",
+    "name": "Distortion and Corruption",
+    "moduleName": "IPCTS",
+    "configName": "Configuration1",
+    "participantName": "Participant1",
+    "disabled": true
+  }, {
+    "ID": "1_1_1_2_2",
+    "parentId": "1_1_1_2",
+    "name": "Audio Filters",
+    "moduleName": "IPCTS",
+    "configName": "Configuration1",
+    "participantName": "Participant1",
+    "disabled": true
+  }, {
+    "ID": "1_1_1_3",
+    "parentId": "1_1_1",
+    "name": "ASR 1",
+    "moduleName": "IPCTS",
+    "configName": "Configuration1",
+    "participantName": "Participant1"
+  }, {
+    "ID": "1_1_2",
+    "parentId": "1_1",
+    "name": "Participant 2: Extension 0002",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_2_1",
+    "parentId": "1_1_2",
+    "name": "User Interface 2",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_2_1_1",
+    "parentId": "1_1_2_1",
+    "name": "Captions",
+    "moduleName": "IPCTS",
+    "configName": "Configuration1",
+    "participantName": "Participant2",
+    "disabled": true
+  }, {
+    "ID": "1_1_2_1_3",
+    "parentId": "1_1_2_1",
+    "name": "Incoming Audio",
+    "moduleName": "IPCTS",
+    "configName": "Configuration1",
+    "participantName": "Participant2",
+    "disabled": true
+  }, {
+    "ID": "1_1_2_2",
+    "parentId": "1_1_2",
+    "name": "Audio Stream 2",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_2_2_1",
+    "parentId": "1_1_2_2",
+    "name": "Distortion and Corruption",
+    "moduleName": "IPCTS",
+    "configName": "Configuration1",
+    "participantName": "Participant2",
+    "disabled": true
+  }, {
+    "ID": "1_1_2_2_2",
+    "parentId": "1_1_2_2",
+    "name": "Audio Filters",
+    "moduleName": "IPCTS",
+    "configName": "Configuration1",
+    "participantName": "Participant2",
+    "disabled": true
+  }
+]

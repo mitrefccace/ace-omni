@@ -1,0 +1,28 @@
+.configurationGrayBox {
+  padding: 16px;
+  background-color: var(--ADS_Background_Gray_Med1);
+  margin-top: 5px;
+}
+.configurationLightGrayBox {
+  padding: 16px;
+  background-color: var(--ADS_Background_Gray_Light);
+  margin-top: 5px;
+}
+.tab-left{
+  padding-left: 3%;
+}
+.number-input-box-wrapper{
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-right: 1vw;
+}
+.right-number-input-col{
+  width: 110px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.right-number-input{
+  display: flex;
+  align-items: center;
+}

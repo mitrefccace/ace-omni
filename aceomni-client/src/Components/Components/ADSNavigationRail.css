@@ -1,0 +1,73 @@
+.navRail {
+  height: 100%;
+  width: 72px !important;
+  background-color: var(--ADS_Background_Gray_Light);
+  float: left;
+}
+
+.navRailDivider {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1
+}
+
+.activeRailItem {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--ADS_Blue);
+  background-color: var(--ADS_Blue_T80);
+  /* box-shadow: -5px 0px 0px 0px  var(--ADS_Blue_T40); */
+}
+
+.activeRailItem:focus {
+  outline: 1px solid black;
+}
+
+.activeRailItem:focus-visible {
+  outline: 1px solid black;
+}
+
+.navRailItem {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--ADS_Black);
+}
+
+.navRailItem:hover {
+  color: var(--ADS_Blue);
+  background-color: var(--ADS_Blue_T90);
+}
+
+.navRailItem:focus {
+  color: var(--ADS_Blue);
+  background-color: var(--ADS_Blue_T80);
+  outline: 1px solid black;
+}
+
+.navRailItem:focus-visible {
+  color: var(--ADS_Blue);
+  background-color: var(--ADS_Blue_T80);
+  outline: 1px solid black;
+}
+
+.navigationHamburger {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-left: 16px;
+  padding-right: 16px;
+}

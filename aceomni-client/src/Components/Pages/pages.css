@@ -1,0 +1,79 @@
+/* ------------------------ Admin.tsx */
+.admin-container {
+  padding: 42px !important;
+}
+
+.admin-desc {
+  padding: 24px 0;
+}
+
+
+/* ------------------------ Users.tsx */
+#users-data-table .search-enabled-row {
+  padding: 16px 0;
+}
+
+#admin-tab-group .ads-panel-list {
+  border-top: 1px solid var(--ADS_Grayscale_20);
+}
+
+#admin-tab-group .chakra-tabs__tablist {
+  border-bottom: none !important;
+}
+
+
+/* ------------------------ CSPCredentials.tsx */
+.csp-main .container {
+  display: grid;
+  grid-gap: 24px;
+}
+
+.csp-main .h2 {
+  margin-bottom: 16px;
+}
+
+.csp-main .h3 {
+  margin-top: 8px;
+}
+
+.csp-main .h3:not(:nth-child(2)){
+  margin-top: 16px;
+}
+
+.csp-main .h2, .csp-main .h3 {
+  padding-left: 0;
+}
+
+.save-credentials-button {
+  width: 12%;
+  margin-left: -12px;
+}
+
+.csp-main .row {
+  padding: 8px 0;
+}
+
+.save-credentials-button {
+  margin-top: 8px !important;
+}
+
+/* ------------------------ ErrorPage404.tsx */
+.page-not-found {
+  color: var(--ADS_Background_Gray_Dark);
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 13%;
+  text-align: center;
+}
+
+.supporting-text {
+  color: var(--ADS_Background_Gray_Dark);
+  font-size: 1.125em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.redirect-button {
+  margin-top: 5%;
+  text-align: center;
+}

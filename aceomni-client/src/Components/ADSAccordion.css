@@ -1,0 +1,27 @@
+/* Border of selected header */
+.accordion {
+    /* --bs-accordion-btn-focus-box-shadow: black !important; */
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 1px black !important;
+    --bs-accordion-inner-border-radius: 0 !important;
+    --bs-accordion-border-color: var(--ADS_Grayscale_20) !important;   
+}
+
+.accordion button {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    color: var(--ADS_Black) !important;
+    background-color: white !important;
+}
+
+.accordion-header > button:focus {
+    background-color: var(--ADS_Blue_T80) !important;   
+}
+
+.accordion-header > button:hover {
+    background-color: var(--ADS_Blue_T90) !important;   
+}
+
+/* Override color of selected carat */
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon) !important;
+}

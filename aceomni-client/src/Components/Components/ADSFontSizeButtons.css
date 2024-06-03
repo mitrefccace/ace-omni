@@ -1,0 +1,34 @@
+.font-size-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.fontSizeButtons {
+  border: 1px solid var(--ADS_Grayscale_50) !important;
+  background-color: var(--ADS_Grayscale_5) !important;
+  height: 100%;
+  align-items: center;
+  display: flex !important;
+}
+
+.currentFontSize {
+  background-color: var(--ADS_White) !important;
+  border: 1px solid var(--ADS_Grayscale_50) !important;
+  height: 100%;
+  align-items: center;
+  display: flex !important;
+  pointer-events: none;
+  color: var(--ADS_Grayscale_50) !important;
+}
+
+.fontSizeButtons:not([disabled]):hover {
+  background-color: var(--ADS_Blue_T90) !important;
+  color: var(--ADS_Blue) !important;
+}
+
+.fontSizeButtons:not([disabled]):focus {
+  background-color: var(--ADS_Blue_T80) !important;
+  color: var(--ADS_Blue) !important;
+  box-shadow: inset 0 0 0 1px var(--ADS_Black);
+}

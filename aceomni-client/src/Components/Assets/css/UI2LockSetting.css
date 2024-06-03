@@ -1,0 +1,20 @@
+.configurationGrayBox {
+  padding: 16px;
+  background-color: var(--ADS_Background_Gray_Med1);
+  margin-top: 5px;
+}
+.configurationLightGrayBox {
+  padding: 16px;
+  background-color: var(--ADS_Background_Gray_Light);
+  margin-top: 5px;
+}
+.single-text-feild {
+  width: 40%;
+  display: block;
+}
+.chat-toggle-switch {
+  display: inline-flex;
+}
+.chat-div {
+  padding-right: 13%;
+}

@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  --bs-font-sans-serif:  Roboto, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bs-body-color: var(--ADS_Black) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,40 @@
+@import "../global_colors.css";
+
+.Mui-disabled {
+  opacity: 38%;
+}
+
+.MuiInput-input {
+  padding: 0 !important;
+}
+
+.MuiInput-root:after {
+  padding: 0 !important;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 0px !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: var(--ADS_Grayscale_20) !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused {
+  border-radius: 0px !important;
+  box-shadow: 0 0 0 0.25rem var(--ADS_Blue_T70) !important;
+}
+
+.MuiInputBase-input.MuiOutlinedInput-input {
+  text-align: center;
+  padding: 6.5px 16px 6px 16px !important;
+  height: 24px;
+  line-height: 24px;
+  animation-name: none !important;
+  animation-duration: 0ms !important;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border-color: var(--ADS_Blue_T30) !important;
+  border-width: 1px;
+}

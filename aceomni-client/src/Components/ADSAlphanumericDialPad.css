@@ -1,0 +1,57 @@
+@import "../global_colors.css";
+
+.main-col {
+  border-radius: .25rem;
+   /* 80*4 + 16*2 + 8*3 */
+  height: 376px;
+}
+
+.main-col-dark {
+  background-color: var(--ADS_Blue);
+}
+
+.main-col-none {
+  background-color: none;
+}
+
+.alphanumericdialpad-row {
+  /* 80*3 + 16*2 + 8*2 */
+  width: 288px;
+  padding: 16px 16px 16px 0px;
+}
+
+.alphanumericdialpad-button {
+  width: 80px;
+  height: 80px;
+  color: var(--ADS_Black) !important;
+  font-weight: bold !important;
+  margin-bottom: 8px;
+}
+
+.alphanumericdialpad-button:not([disabled]):hover {
+  background-color: var(--ADS_Blue_T90) !important;
+  color: var(--ADS_Blue) !important;
+  border-color: var(--ADS_Blue) !important;
+  border-width: 2px !important;
+}
+
+.alphanumericdialpad-button:not([disabled]):focus {
+  background-color: var(--ADS_Blue_T80) !important;
+  color: var(--ADS_Blue) !important;
+  border-color: var(--ADS_Blue) !important;
+  border-width: 2px !important;
+  box-shadow: inset 0 0 0 1px var(--ADS_Black);
+}
+
+.alphanumericdialpad-button-dark {
+  background-color: var(--ADS_Grayscale_5) !important;
+}
+
+.alphanumericdialpad-button-none {
+  background-color: var(--ADS_Grayscale_10) !important;
+  border: 1px solid var(--ADS_Grayscale_20) !important;
+}
+
+.alphanumericdialpad-digit {
+  font-size: 32px;
+}

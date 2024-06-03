@@ -1,0 +1,103 @@
+/* global color stylesheet */
+
+:root {
+  --ADS_Blue: #073863;
+  --ADS_Orange: #EF5343;
+  --ADS_Gray: #9EAFB2;
+  --ADS_White: #FFFFFF;
+  --ADS_Black: #000000;
+  --ADS_Background_Gray_Light: #F9F9F9;
+  --ADS_Background_Gray_Med1: #DDDDDD;
+  --ADS_Background_Gray_Med2: #CCCCCC;
+  --ADS_Background_Gray_Dark: #333333;
+
+  --ADS_Blue_T10: #204C73;
+  --ADS_Blue_T20: #396082;
+  --ADS_Blue_T30: #517492;
+  --ADS_Blue_T40: #6A88A1;
+  --ADS_Blue_T50: #839CB1;
+  --ADS_Blue_T60: #9CAFC1;
+  --ADS_Blue_T70: #B5C3D0;
+  --ADS_Blue_T80: #CDD7E0;
+  --ADS_Blue_T90: #E6EBEF;
+
+  --ADS_Blue_S10: #063259;
+  --ADS_Blue_S20: #062D4F;
+  --ADS_Blue_S30: #052745;
+  --ADS_Blue_S40: #04223B;
+  --ADS_Blue_S50: #041C32;
+  --ADS_Blue_S60: #031628;
+  --ADS_Blue_S70: #02111E;
+  --ADS_Blue_S80: #010B14;
+  --ADS_Blue_S90: #01060A;
+
+  --ADS_Orange_T10: #F16556;
+  --ADS_Orange_T20: #F27669;
+  --ADS_Orange_T30: #F4877B;
+  --ADS_Orange_T40: #F5988E;
+  --ADS_Orange_T50: #F7AAA1;
+  --ADS_Orange_T60: #F9BBB4;
+  --ADS_Orange_T70: #FACCC7;
+  --ADS_Orange_T80: #FCDDD9;
+  --ADS_Orange_T90: #FDEEEC;
+
+  --ADS_Orange_S10: #D74C3C;
+  --ADS_Orange_S20: #BF4336;
+  --ADS_Orange_S30: #A73B2F;
+  --ADS_Orange_S40: #8F3228;
+  --ADS_Orange_S50: #782A22;
+  --ADS_Orange_S60: #60221B;
+  --ADS_Orange_S70: #481914;
+  --ADS_Orange_S80: #30110D;
+  --ADS_Orange_S90: #180807;
+
+  --ADS_Gray_T10: #A8B7BA;
+  --ADS_Gray_T20: #B1BFC1;
+  --ADS_Gray_T30: #BBC7C9;
+  --ADS_Gray_T40: #C5CFD1;
+  --ADS_Gray_T50: #CFD7D9;
+  --ADS_Gray_T60: #D8DFE0;
+  --ADS_Gray_T70: #E2E7E8;
+  --ADS_Gray_T80: #ECEFF0;
+  --ADS_Gray_T90: #F5F7F7;
+
+  --ADS_Gray_S10: #8E9EA0;
+  --ADS_Gray_S20: #7E8C8E;
+  --ADS_Gray_S30: #6F7A7D;
+  --ADS_Gray_S40: #5F696B;
+  --ADS_Gray_S50: #4F5859;
+  --ADS_Gray_S60: #3F4647;
+  --ADS_Gray_S70: #2F3535;
+  --ADS_Gray_S80: #202324;
+  --ADS_Gray_S90: #101112;
+
+  --ADS_Grayscale_5: #F1F1F1;
+  --ADS_Grayscale_10: #E3E3E3;
+  --ADS_Grayscale_20: #C8C8C8;
+  --ADS_Grayscale_30: #ACACAC;
+  --ADS_Grayscale_40: #919191;
+  --ADS_Grayscale_50: #757575;
+  --ADS_Grayscale_60: #5E5E5E;
+  --ADS_Grayscale_70: #464646;
+  --ADS_Grayscale_80: #2F2F2F;
+  --ADS_Grayscale_90: #171717;
+
+  --ADS_Info_Alert_Background: #D9EDF7;
+  --ADS_Text_Info: #31798F;
+  --ADS_Success_Alert_Background: #D1E7DD;
+  --ADS_Text_Success: #0F5132;
+  --ADS_Warning_Alert_Background: #FFF3CD;
+  --ADS_Text_Warning: #664D03;
+  --ADS_Danger_Alert_Background: #F8D7DA;
+  --ADS_Text_Danger: #842029;
+  --ADS_Text_Field_Validation_Error: #C71936;
+  --ADS_Text_Field_Validation_Success: #198754;
+
+  --ADS_Hang_Up: #C70000;
+  --ADS_Hang_Up_T10: #CD1919;
+  --ADS_Hang_Up_T20: #D23333;
+  --ADS_Calling: #00860D;
+
+  --ADS_Text_Link: #004C97;
+  --ADS_Text_Link_Hover: #112E51;
+}

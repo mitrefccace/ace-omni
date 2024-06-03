@@ -1,0 +1,114 @@
+{
+  "type": "VRS",
+  "configurations": [
+    {
+      "name": "Configuration1",
+      "participants": [
+        {
+          "name": "Participant1",
+          "extension": "0001",
+          "userInterface1": {
+            "IncomingAudio": {
+              "MonoAudio": false
+            }
+          },
+          "audioStream1": {
+            "includeDistortionCorruption": {
+              "injectBackgroundNoise": false,
+              "audioFile": null,
+              "injectSource": "",
+              "simulatePacketDrops": false,
+              "packetDropSource": "",
+              "packetDropDuration": 2,
+              "repetitionInterval": {
+                "interval": "Exact",
+                "fromSecs": 1,
+                "toSecs": 10
+              }
+            },
+            "audioControlFilters": {
+              "audioFilter": false,
+              "filterType": "",
+              "filterSource": "",
+              "frequency": 20,
+              "rollOff": -12,
+              "gain": 0,
+              "pitch": 0,
+              "quality": 1
+            }
+          }
+        },
+        {
+          "name": "Participant2",
+          "extension": "0002",
+          "userInterface2": {
+            "IncomingAudio": {
+              "MonoAudio": false
+            }
+          },
+          "videoStream1": {
+            "Settings": {}
+          }
+        },
+        {
+          "name": "CommunicationsAssistant",
+          "extension": "0003",
+          "CAuserInterface": {
+            "IncomingAudio": {
+              "MonoAudio": false
+            }
+          },
+          "audioStream2": {
+            "includeDistortionCorruption": {
+              "injectBackgroundNoise": false,
+              "audioFile": null,
+              "injectSource": "",
+              "simulatePacketDrops": false,
+              "packetDropSource": "",
+              "packetDropDuration": 2,
+              "repetitionInterval": {
+                "interval": "Exact",
+                "fromSecs": 1,
+                "toSecs": 10
+              }
+            },
+            "audioControlFilters": {
+              "audioFilter": false,
+              "filterType": "",
+              "filterSource": "",
+              "frequency": 20,
+              "rollOff": -12,
+              "gain": 0,
+              "pitch": 0,
+              "quality": 1
+            }
+          },
+          "videoStream2": {
+            "Settings": {}
+          }
+        }
+      ]
+    }
+  ],
+  "dataCollection": {
+    "Transcripts": {
+      "ASRcaptionStream": false,
+      "TranslationEngine": false
+    },
+    "AudioRecordings": {
+      "AudioStream1": false,
+      "AudioStream2": false
+    },
+    "ScreenRecordings": {
+      "UserInterface1": false,
+      "UserInterface2": false
+    },
+    "VideoRecordings": {
+      "Video1": false,
+      "Video2": false
+    },
+    "OtherData": {
+      "ASRrawdata": true
+    }
+  }
+}

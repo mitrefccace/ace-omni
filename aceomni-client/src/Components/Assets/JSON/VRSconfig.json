@@ -1,0 +1,148 @@
+[
+  {
+    "ID": "1",
+    "name": "VRS",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1",
+    "parentId": "1",
+    "name": "Configuration1",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_1",
+    "parentId": "1_1",
+    "name": "Participant 1: Extension 0001",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_1_1",
+    "parentId": "1_1_1",
+    "name": "User Interface 1",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "Participant1",
+    "collapsable": true
+  }, {
+    "ID": "1_1_1_1_1",
+    "parentId": "1_1_1_1",
+    "name": "Incoming Audio",
+    "moduleName": "VRS",
+    "disabled": true
+  }, {
+    "ID": "1_1_1_2",
+    "parentId": "1_1_1",
+    "name": "Audio Stream 1",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "Participant1",
+    "collapsable": true
+  }, {
+    "ID": "1_1_1_2_1",
+    "parentId": "1_1_1_2",
+    "name": "Distortion and Corruption",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "Participant1",
+    "disabled": true
+  }, {
+    "ID": "1_1_1_2_2",
+    "parentId": "1_1_1_2",
+    "name": "Audio Controls/Filters",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "Participant1",
+    "disabled": true
+  }, {
+    "ID": "1_1_2",
+    "parentId": "1_1",
+    "name": "Participant 2: Extension 0002",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_2_1",
+    "parentId": "1_1_2",
+    "name": "User Interface 2",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "Participant2",
+    "collapsable": true
+  }, {
+    "ID": "1_1_2_1_1",
+    "parentId": "1_1_2_1",
+    "name": "Incoming Audio",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "Participant2",
+    "disabled": true
+  }, {
+    "ID": "1_1_2_2",
+    "parentId": "1_1_2",
+    "name": "Video Stream 1",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "Participant2",
+    "collapsable": true
+  }, {
+    "ID": "1_1_2_2_1",
+    "parentId": "1_1_2_2",
+    "name": "Video Quality",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "Participant2"
+  }, {
+    "ID": "1_1_3",
+    "parentId": "1_1",
+    "name": "Participant 3: Extension 0003",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_3_1",
+    "parentId": "1_1_3",
+    "name": "User Interface 3",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_3_1_1",
+    "parentId": "1_1_3_1",
+    "name": "Incoming Audio",
+    "disabled": true
+  }, {
+    "ID": "1_1_3_2",
+    "parentId": "1_1_3",
+    "name": "Audio Stream 2",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_3_2_1",
+    "parentId": "1_1_3_2",
+    "name": "Distortion and Corruption",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "CommunicationsAssistant",
+    "disabled": true
+  }, {
+    "ID": "1_1_3_2_2",
+    "parentId": "1_1_3_2",
+    "name": "Audio Controls/Filters",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "CommunicationsAssistant",
+    "disabled": true
+  }, {
+    "ID": "1_1_3_3",
+    "parentId": "1_1_3",
+    "name": "Video Stream 2",
+    "expanded": true,
+    "collapsable": true
+  }, {
+    "ID": "1_1_3_3_1",
+    "parentId": "1_1_3_3",
+    "name": "Video Quality",
+    "moduleName": "VRS",
+    "configName": "Configuration1",
+    "participantName": "Participant3"
+  }
+
+]

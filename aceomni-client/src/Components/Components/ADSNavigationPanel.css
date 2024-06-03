@@ -1,0 +1,107 @@
+.navPanel {
+  height: 100%;
+  width: 256px !important;
+  background-color: var(--ADS_Background_Gray_Light);
+  float: left;
+}
+
+.navPanelCol {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activeCol {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: -5px 0px 0px 0px  var(--ADS_Blue_T40); */
+  background-color: var(--ADS_Blue_T80);
+}
+
+.activeCol div {
+  color: var(--ADS_Blue);
+}
+
+.activeCol:focus {
+  outline: 1px solid black;
+}
+
+.activeCol:focus-visible {
+  outline: 1px solid black;
+}
+
+.navPanelDivider {
+  height: 40px;
+  width: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1
+}
+
+.navPanelItem {
+  height: 40px;
+  width: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--ADS_Black);
+}
+
+.navPanelIcon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--ADS_Black);
+}
+.navPanelLabel {
+  height: 40px;
+  width: 184px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  color: var(--ADS_Black);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navPanelCol:hover div {
+  color: var(--ADS_Blue);
+  background-color: var(--ADS_Blue_T90);
+  background-clip: content-box;
+}
+
+.navPanelCol:focus {
+  color: var(--ADS_Blue);
+  background-color: var(--ADS_Blue_T80);
+  outline: 1px solid black;
+  background-clip: content-box;
+}
+
+.navPanelCol:focus-visible {
+  color: var(--ADS_Blue);
+  background-color: var(--ADS_Blue_T80);
+  outline: 1px solid black;
+  background-clip: content-box;
+}
+
+.navigationHamburger {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-left: 16px;
+  padding-right: 16px;
+}

@@ -1,0 +1,144 @@
+.IPCTS-top-control-bar {
+  background-color: var(--ADS_White);
+  border-bottom:  1px solid var(--ADS_Grayscale_50);
+  width: 100%;
+  min-width: 848px;
+  height: 72px;
+  margin-left: 0 !important;
+}
+
+.top-bar-control-items {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+}
+
+.top-bar-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.font-size-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.IPCTS-Container {
+  background-color: var(--ADS_White);
+  border:  1px solid var(--ADS_Grayscale_50);
+  margin-top: 36px;
+  height: calc(100vh - 188px);
+  min-height: 532px !important;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-header-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.container-header-id {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--ADS_Black);
+}
+
+.calling-indicator {
+  color: var(--ADS_Calling);
+}
+
+.call-timer {
+  color: var(--ADS_Grayscale_70);
+}
+
+.study-title {
+  color: var(--ADS_Grayscale_70);
+}
+
+.date-time {
+  color: var(--ADS_Grayscale_50);
+}
+
+.captions-placeholder {
+  color: var(--ADS_Grayscale_70);
+  font-size: 14px;
+}
+
+.caption-speaker {
+  font-size: 14px;
+  font-weight: medium;
+  color: var(--ADS_Black);
+}
+
+.caption-content {
+  color: var(--ADS_Black);
+}
+
+.setting-button-style {
+  size: 16px;
+  font-weight: normal;
+}
+
+
+/* XL Screen */
+@media (min-width: 1200px) {
+  .IPCTS-Container {
+    width: 1020px !important;
+  }
+
+  .main-top-bar-content {
+    width: 1020px !important;
+    min-width: 1020px !important;
+  }
+
+  .captions-container {
+    width: 1020px !important;
+    min-width: 1020px !important;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .IPCTS-Container {
+    width: 848px !important;
+  }
+
+  .main-top-bar-content {
+    width: 848px !important;
+    min-width: 848px !important;
+  }
+
+  .captions-container {
+    width: 848px !important;
+    min-width: 848px !important;
+  }
+}
+
+/* Medium Screen */
+@media (max-width: 991px){
+  .IPCTS-Container {
+    width: 720px !important;
+  }
+
+  .main-top-bar-content {
+    width: 720px !important;
+    min-width: 720px !important;
+  }
+
+  .captions-container {
+    width: 720px !important;
+    min-width: 720px !important;
+  }
+}

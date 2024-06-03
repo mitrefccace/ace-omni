@@ -1,0 +1,93 @@
+.padded {
+  padding: 5px 30px 20px;
+}
+
+.top-padded {
+  padding-top: 10px;
+}
+
+.bottom-padded {
+  padding-bottom: 10px;
+}
+
+.bottom-left-padded {
+  padding-left: 17px;
+  padding-bottom: 25px;
+}
+
+.left-padded {
+  padding-left: 15px;
+}
+
+.zero-pad {
+  padding: 0px;
+}
+
+.collected-data-padding {
+  padding: 5px 30px 0px;
+}
+
+.background-gray {
+  background-color: var(--ADS_Background_Gray_Light);
+}
+
+.background-white {
+  background-color: var(--ADS_White);
+}
+
+.left-margin {
+  margin-left: 10px;
+}
+
+.top-margin {
+  margin-top: 10px;
+}
+
+.expand-row-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.expand-row-col {
+  width: 80%;
+}
+
+.expand-row-col>.row {
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.expand-header {
+  font-weight: 700 !important;
+}
+
+.expand-download {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.call-download-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+#call-data-table-row {
+  padding-bottom: 64px;
+}
+
+#call-data-table .rdt_ExpanderRow {
+  padding: 16px 0 24px 0;
+}
+
+.overview-breadcrumb-row {
+  padding-top: 10px !important;
+  padding-left: 8px !important;
+}
+
+.particip-url-span {
+  display: flex;
+  align-items: center;
+}
