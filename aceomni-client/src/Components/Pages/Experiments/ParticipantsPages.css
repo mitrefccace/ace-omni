@@ -220,7 +220,7 @@
   overflow: auto;
 }
 
-/*are these media rules necessary? Ask Harrison*/
+/*are these media rules necessary? */
 @media only screen and (max-width: 991px) {
   .xvideo-remote {
     display: flex;
